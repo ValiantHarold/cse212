@@ -61,6 +61,9 @@ print(person) # Gerald
 ## Problem to Solve
 
 You will be working on getting the skip, +2, and +4 uno card to work.
-[Uno](queue_start.py)
+
+[Uno start](queue_start.py)
 
 Once you solve the problem check the solution to compare your answer.
+
+[Uno solution](queue_solution.py)
