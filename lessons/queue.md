@@ -1,7 +1,7 @@
 # Queue
 
-| [README](README.md) | [Queue](queue.md) | [Set](set.md) | [Binary Tree](binaryTree.md) |
-| ------------------- | ----------------- | ------------- | ---------------------------- |
+| [README](../README.md) | [Queue](queue.md) | [Set](set.md) | [Binary Tree](binaryTree.md) |
+| ---------------------- | ----------------- | ------------- | ---------------------------- |
 
 ## Introduction
 
@@ -10,7 +10,7 @@ Queues are used when data needs to be processed in a First In First Out (FIFO) o
 1. When a resource is shared amoung multiple users. ex CPU scheduling, Disk Scheduling.
 2. When data is transfered asynchronously between two processes. ex IO Buffers, pipes, file IO.
 
-![](queue.png)
+![](../images/queue.png)
 
 Let us think of this queue above as a line waiting to go into the movie theater.
 
@@ -62,8 +62,8 @@ print(person) # Gerald
 
 You will be working on getting the skip, +2, and +4 uno card to work.
 
-[Uno start](queue_start.py)
+[Uno start](../practice_problems/queue_start.py)
 
 Once you solve the problem check the solution to compare your answer.
 
-[Uno solution](queue_solution.py)
+[Uno solution](../practice_problems/queue_solution.py)
