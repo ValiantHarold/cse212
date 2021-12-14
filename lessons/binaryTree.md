@@ -111,14 +111,40 @@ def _traverse_forward(self, node):
 		yield from self._traverse_forward(node.right)
 ```
 
+## Height
+
+The height of a tree can be found by counting the maximum number of nodes between root and the leaves. This can be used in other trees to be able to be self-balancing. You will be implementing this during your practice problem.
+
 ## Example
 
-```python
-print("Example")
+Using the code in the practice problems we can construct a binary search tree the following way.
 
+```python
+tree = BST()
+```
+
+We then can insert our values like so.
+
+```python
+tree.insert(5)
+tree.insert(3)
+tree.insert(7)
+tree.insert(4)
+tree.insert(10)
+tree.insert(1)
+tree.insert(6)
+```
+
+Finally we can print out the nodes in the tree like this.
+
+```python
+for x in tree:
+    print(x)  # 1, 3, 4, 5, 6, 7, 10
 ```
 
 ## Problem to Solve
+
+Implement height into the BST class.
 
 [Binary Tree start](../practice_problems/binaryTree_start.py)
 
