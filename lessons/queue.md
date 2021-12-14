@@ -5,10 +5,10 @@
 
 ## Introduction
 
-Queues are used when data needs to be processed in a First In First Out (FIFO) order. This makes queuevery useful in these kind of scenarios.
+Queues are used when data needs to be processed in a First In First Out (FIFO) order. This makes queue very useful in these kinds of scenarios.
 
-1. When a resource is shared amoung multiple users. ex CPU scheduling, Disk Scheduling.
-2. When data is transfered asynchronously between two processes. ex IO Buffers, pipes, file IO.
+1. When a resource is shared among multiple users. ex CPU scheduling, Disk Scheduling.
+2. When data is transferred asynchronously between two processes. ex IO Buffers, pipes, file IO.
 
 ![](../images/queue.png)
 
@@ -40,16 +40,25 @@ value = my_queue.pop(0)
 
 ## Example
 
-```python
-print("Example")
-movie_line = Queue()
+Lets make our movie line
 
-# adds three people to our movie line
+```python
+movie_line = Queue()
+```
+
+Now lets add people to our line.
+
+```python
+# Adds three people to our movie line
 movie_line.enqueue("Bob")
 movie_line.enqueue("Amanda")
 movie_line.enqueue("Gerald")
+```
 
-# removes the front most person from our movie line
+Now lets have them get their tickets
+
+```python
+# Removes the front most person from our movie line
 person = movie_line.dequeue()
 print(person) # Bob
 person = movie_line.dequeue()

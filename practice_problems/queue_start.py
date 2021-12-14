@@ -31,7 +31,7 @@ class Uno_Queue:
 
         def __init__(self, name):
             self.name = name
-            self.cards = 2
+            self.cards = 7
 
         def __str__(self):
             result = "{}:cards left {}".format(self.name, self.cards)

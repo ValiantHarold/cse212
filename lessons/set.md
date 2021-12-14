@@ -29,7 +29,7 @@ my_set.remove(value)
 
 There are a couple of other ways to remove an element(s) from a set:
 
--  The discard(x) method removes x from the set, but doesn't raise any error if x is not present in the set.
+-  The discard(x) method removes x from the set but doesn't raise any error if x is not present in the set.
 
 ```python
 my_set.discard(value)
@@ -51,7 +51,7 @@ my_set.clear()
 
 The union() method returns a set that contains all items from the original set, and all items from the specified set(s).
 
-You can specify as many sets you want, separated by commas. It does not have to be a set, it can be any iterable object. If an item is present in more than one set, the result will contain only one appearance of this item.
+You can specify how many sets you want, separated by commas. It does not have to be a set; it can be any iterable object. If an item is present in more than one set, the result will contain only one appearance of this item.
 
 ```python
 x = {"a", "b", "c"}
@@ -81,21 +81,28 @@ print(result) # {"c"}
 
 ## Example
 
-```python
-print("Example")
+Here are three sets that hold a string.
 
+```python
 x = {"a", "b", "c", "d", "e"}
 y = {"c", "d", "e", "f", "g"}
 z = {"e", "f", "g", "h", "i"}
+```
 
+Lets find the intersection between the sets.
+
+```python
 result = x.intersection(y, z)
 print(result)  # {"e"}
+```
 
+Now lets add "f" and try again
+
+```python
 x.add("f")
 
 result = x.intersection(y, z)
 print(result)  # {"e", "f"}
-
 ```
 
 ## Problem to Solve
